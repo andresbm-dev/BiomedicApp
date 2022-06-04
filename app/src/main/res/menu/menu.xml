@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Home"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/maintenance"
+        android:title="Maintenance"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_engineering_24" />
+    <item
+        android:id="@+id/calibrate"
+        android:icon="@drawable/ic_baseline_edit_24"
+        android:enabled="true"
+        android:title="Calibration"/>
+
+</menu>
