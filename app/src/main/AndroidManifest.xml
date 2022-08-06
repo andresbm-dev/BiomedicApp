@@ -17,11 +17,11 @@
             android:label="@string/title_activity_navigation"
             android:theme="@style/Theme.BiomedicApp.NoActionBar" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".login.LoginActivity"
             android:exported="true"
        />
         <activity
-            android:name=".SplashActivity"
+            android:name=".splash.SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".home.MainActivity"
             android:exported="true" />
     </application>
 

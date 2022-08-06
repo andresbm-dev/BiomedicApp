@@ -1,10 +1,11 @@
-package com.example.biomedicapp
+package com.example.biomedicapp.home.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.biomedicapp.R
 import com.example.biomedicapp.databinding.FragmentHomeBinding
 
 
@@ -21,7 +22,7 @@ class HomeFragment : Fragment() {
 
     companion object{
         fun newInstance():Fragment{
-            val fragment = HomeFragment.newInstance()
+            val fragment = newInstance()
             return fragment
         }
     }

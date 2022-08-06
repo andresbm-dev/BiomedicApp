@@ -1,10 +1,13 @@
-package com.example.biomedicapp
+package com.example.biomedicapp.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.example.biomedicapp.home.fragments.HomeFragment
+import com.example.biomedicapp.home.fragments.MaintenanceFragment
+import com.example.biomedicapp.R
 import com.example.biomedicapp.databinding.ActivityMainBinding
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.example.biomedicapp.home.fragments.CalibrateFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -13,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.myToolbar.title = "Biomédicapp"
+        binding.toolBar.title = "Biomédicapp"
 
         loadFragment(HomeFragment())
         BottomnavigationFragments()

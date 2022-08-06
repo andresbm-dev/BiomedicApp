@@ -1,8 +1,9 @@
-package com.example.biomedicapp
+package com.example.biomedicapp.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.biomedicapp.home.MainActivity
 import com.example.biomedicapp.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
