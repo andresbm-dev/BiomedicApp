@@ -8,13 +8,22 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.BiomedicApp">
         <activity
+            android:name=".NavigationActivity"
+            android:exported="true"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/Theme.BiomedicApp.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+       />
+        <activity
             android:name=".SplashActivity"
             android:exported="true"
-            android:theme="@style/SplashTheme"
-            >
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,8 +32,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"/>
-
+            android:exported="true" />
     </application>
 
 </manifest>
