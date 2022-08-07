@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.BiomedicApp" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#CE6633B8</item>
-        <item name="colorPrimaryVariant">#CE6633B8</item>
+        <item name="colorPrimary">#81d4fa</item>
+        <item name="colorPrimaryVariant">#81d4fa</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

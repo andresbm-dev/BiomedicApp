@@ -17,4 +17,14 @@
     <string name="login">Login</string>
     <string name="email">Email</string>
     <string name="pasword">Pasword</string>
+    <string name="name">Name</string>
+    <string name="description">description</string>
+    <string name="register">¿Eres Nuevo? Registrate Aquí.</string>
+    <string name="nombre">Nombre</string>
+    <string name="surname">Apellido</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="welcome">¡Bienvenido de Nuevo!</string>
+    <string name="login_text">Login a BiomedicApp</string>
+    <string name="user_register_text">Registro de Usuario</string>
+    <string name="form_text">Para Completar El Registro Llene los siguientes Datos</string>
 </resources>

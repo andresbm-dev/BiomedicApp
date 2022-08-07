@@ -12,14 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BiomedicApp">
         <activity
-            android:name=".NavigationActivity"
-            android:exported="true"
-            android:label="@string/title_activity_navigation"
-            android:theme="@style/Theme.BiomedicApp.NoActionBar" />
+            android:name=".register.RegisterActivity"
+            android:exported="true" />
         <activity
             android:name=".login.LoginActivity"
-            android:exported="true"
-       />
+            android:exported="true" />
         <activity
             android:name=".splash.SplashActivity"
             android:exported="true"
@@ -31,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".home.MainActivity"
+            android:name=".home.activity.MainActivity"
             android:exported="true" />
     </application>
 

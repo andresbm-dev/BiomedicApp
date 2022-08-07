@@ -3,8 +3,9 @@ package com.example.biomedicapp.login
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.biomedicapp.home.MainActivity
+import com.example.biomedicapp.home.activity.MainActivity
 import com.example.biomedicapp.databinding.ActivityLoginBinding
+import com.example.biomedicapp.register.RegisterActivity
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
@@ -15,6 +16,11 @@ class LoginActivity : AppCompatActivity() {
 
         binding.bottomStart.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
+
+        binding.tvRegister.setOnClickListener {
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
     }
 }
