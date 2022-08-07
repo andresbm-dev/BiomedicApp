@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/carlos/AndroidStudioProjects/BiomedicApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21481481481481482" />
+        <entry key="..\:/Users/carlos/AndroidStudioProjects/BiomedicApp/app/src/main/res/drawable/button_disable_rounded.xml" value="0.1" />
         <entry key="..\:/Users/carlos/AndroidStudioProjects/BiomedicApp/app/src/main/res/drawable/button_rounded.xml" value="0.13778501628664494" />
         <entry key="..\:/Users/carlos/AndroidStudioProjects/BiomedicApp/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.21481481481481482" />
         <entry key="..\:/Users/carlos/AndroidStudioProjects/BiomedicApp/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2169230769230769" />
@@ -20,6 +21,7 @@
         <entry key="..\:/Users/carlos/AndroidStudioProjects/BiomedicApp/app/src/main/res/layout/fragment_maintenance.xml" value="0.2" />
         <entry key="..\:/Users/carlos/AndroidStudioProjects/BiomedicApp/app/src/main/res/layout/menu.xml" value="0.11065573770491803" />
         <entry key="..\:/Users/carlos/AndroidStudioProjects/BiomedicApp/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/carlos/AndroidStudioProjects/BiomedicApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
     </option>
   </component>
