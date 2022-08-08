@@ -10,6 +10,9 @@ import com.example.biomedicapp.R
 import com.example.biomedicapp.databinding.ActivityRegisterBinding
 import com.example.biomedicapp.home.activity.MainActivity
 import com.example.biomedicapp.login.LoginActivity
+import com.example.biomedicapp.utils.BioApplication.Companion.preferences
+import com.example.biomedicapp.utils.Utils
+import com.example.biomedicapp.utils.UtilsConstants
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
@@ -46,11 +49,16 @@ class RegisterActivity : AppCompatActivity() {
         password = binding.tvPassword.text.toString()
         if (!name.isNullOrEmpty() && !surName.isNullOrEmpty() && !city.isNullOrEmpty() && !email.isNullOrEmpty() && !password.isNullOrEmpty()) {
             storeData()
-            startActivity(Intent(this, MainActivity::class.java))
+            goHome()
+
         }
         else{
             showAlertError()
         }
+    }
+
+    private fun goHome() {
+        startActivity(Intent(this,MainActivity::class.java))
     }
 
     private fun showAlertError() {
@@ -62,7 +70,10 @@ class RegisterActivity : AppCompatActivity() {
 
 
     private fun storeData() {
-        TODO("Not yet implemented")
+        preferences.saveEmail(email!!)
+        preferences.savePassword(password!!)
+        preferences.saveName(name!!)
+        preferences.saveCity(city!!)
     }
 
     private fun enabledButtonNext() {

@@ -29,4 +29,5 @@
     <string name="form_text">Para Completar El Registro Llene los siguientes Datos</string>
     <string name="forgot_password_text">¿Olvidaste tu Contraseña?</string>
     <string name="next_button_title">Continuar</string>
+    <string name="account_text">Mi Cuenta</string>
 </resources>
