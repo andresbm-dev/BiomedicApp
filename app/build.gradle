@@ -17,6 +17,14 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += ["room.schemaLocation": "$projectDir/schemas".toString()]
+                arguments += [
+                        "dagger.hilt.disableModulesHaveInstallInCheck": "true"
+                ]
+            }
+        }
     }
 
     buildTypes {
@@ -34,6 +42,15 @@ android {
     }
     viewBinding {
         enabled = true
+    }
+    kapt {
+        correctErrorTypes = true
+        javacOptions {
+            // These options are normally set automatically via the Hilt Gradle plugin, but we
+            // set them manually to workaround a bug in the Kotlin 1.5.20
+            option("-Adagger.fastInit=ENABLED")
+            option("-Adagger.hilt.android.internal.disableAndroidSuperclassValidation=true")
+        }
     }
 
 }
@@ -81,9 +98,9 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.13.2'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
 
-    implementation "com.google.dagger:hilt-android:2.40"
-    kapt "com.google.dagger:hilt-android-compiler:2.40"
-    implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
+    implementation "com.google.dagger:hilt-android:2.38.1"
+    kapt "com.google.dagger:hilt-android-compiler:2.38.1"
+   // implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
 
 
 }

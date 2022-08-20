@@ -4,9 +4,11 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b81b1ab99a616afc06a427b981a57a9b/transformed/versionedparcelable-1.1.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a4310f927c1829d7b233ea4adb2eb82e/transformed/versionedparcelable-1.1.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cfa18c44354e6c81a773418fe3688c11/transformed/versionedparcelable-1.1.1/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1a4ea6344a722c292ed153007eb71db0/transformed/versionedparcelable-1.1.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1a4ea6344a722c292ed153007eb71db0/transformed/versionedparcelable-1.1.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1a4ea6344a722c292ed153007eb71db0/transformed/versionedparcelable-1.1.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c09fd4a5bdc2e29a1a8fd2e6e6dc2bc9/transformed/versionedparcelable-1.1.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8206e05aed4d3be4fa0454efcee12525/transformed/versionedparcelable-1.1.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8206e05aed4d3be4fa0454efcee12525/transformed/versionedparcelable-1.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8206e05aed4d3be4fa0454efcee12525/transformed/versionedparcelable-1.1.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

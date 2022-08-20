@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".register.ui.RegisterActivity">
+    tools:context=".feature.register.ui.RegisterActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tool_bar"
@@ -120,6 +120,7 @@
                 android:id="@+id/tv_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -141,6 +142,7 @@
                 android:id="@+id/tv_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textPassword"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -165,22 +167,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <Button
-        android:id="@+id/bottom_start_disbale"
-        android:layout_width="308dp"
-        android:layout_height="wrap_content"
-        android:text="@string/next_button_title"
-        android:textColor="@color/grey_disable"
-        android:layout_marginBottom="100dp"
-        android:layout_marginHorizontal="10dp"
-        android:padding="9dp"
-        android:visibility="gone"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        android:background="@drawable/button_disable_rounded"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+
 
 
 

@@ -1,9 +1,9 @@
-package com.example.biomedicapp.splash
+package com.example.biomedicapp.feature.splash
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.biomedicapp.login.ui.LoginActivity
+import com.example.biomedicapp.feature.login.ui.LoginActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {3

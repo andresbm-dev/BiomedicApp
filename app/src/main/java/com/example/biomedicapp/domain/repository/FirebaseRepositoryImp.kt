@@ -26,10 +26,12 @@ class FirebaseRepositoryImp @Inject constructor(
         return try{
             var isSuccessFull = false
             firebaseAuth.createUserWithEmailAndPassword(email,passwrord)
-                .addOnCompleteListener { isSuccessFull = it.isSuccessful }
+                .addOnCompleteListener { isSuccessFull = true }
+                .addOnFailureListener { isSuccessFull = false }
                 .await()
             return isSuccessFull
         }catch (e:Exception){
+            print(e)
             false
         }
     }

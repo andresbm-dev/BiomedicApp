@@ -13,19 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BiomedicApp">
         <activity
-            android:name=".login.ui.PasswordRecoveryActivity"
+            android:name="com.example.biomedicapp.feature.login.ui.PasswordRecoveryActivity"
             android:exported="true" />
         <activity
             android:name=".account.AccountActivity"
             android:exported="true" />
         <activity
-            android:name=".register.ui.RegisterActivity"
+            android:name="com.example.biomedicapp.feature.register.ui.RegisterActivity"
             android:exported="true" />
         <activity
-            android:name=".login.ui.LoginActivity"
+            android:name="com.example.biomedicapp.feature.login.ui.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".splash.SplashActivity"
+            android:name="com.example.biomedicapp.feature.splash.SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -35,7 +35,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".home.activity.MainActivity"
+            android:name="com.example.biomedicapp.feature.home.activity.MainActivity"
             android:exported="true" />
     </application>
 

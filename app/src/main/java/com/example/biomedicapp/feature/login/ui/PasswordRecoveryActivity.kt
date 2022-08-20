@@ -1,4 +1,4 @@
-package com.example.biomedicapp.login.ui
+package com.example.biomedicapp.feature.login.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

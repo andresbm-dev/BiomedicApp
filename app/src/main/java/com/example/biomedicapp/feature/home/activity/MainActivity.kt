@@ -1,18 +1,16 @@
-package com.example.biomedicapp.home.activity
+package com.example.biomedicapp.feature.home.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.example.biomedicapp.home.fragments.HomeFragment
-import com.example.biomedicapp.home.fragments.MaintenanceFragment
+import com.example.biomedicapp.feature.home.fragments.HomeFragment
+import com.example.biomedicapp.feature.home.fragments.MaintenanceFragment
 import com.example.biomedicapp.R
 import com.example.biomedicapp.account.AccountActivity
 import com.example.biomedicapp.databinding.ActivityMainBinding
-import com.example.biomedicapp.home.fragments.CalibrateFragment
+import com.example.biomedicapp.feature.home.fragments.CalibrateFragment
 import com.example.biomedicapp.utils.BioApplication.Companion.preferences
-import com.example.biomedicapp.utils.UtilsConstants
-import java.util.prefs.Preferences
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

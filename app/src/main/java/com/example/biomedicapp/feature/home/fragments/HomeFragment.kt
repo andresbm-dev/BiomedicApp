@@ -1,4 +1,4 @@
-package com.example.biomedicapp.home.fragments
+package com.example.biomedicapp.feature.home.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -2,7 +2,9 @@ package com.example.biomedicapp.utils
 
 import android.annotation.SuppressLint
 import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
 
+@HiltAndroidApp
 class BioApplication : Application() {
 
     companion object{

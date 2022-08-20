@@ -40,4 +40,7 @@
     <style name="Theme.BiomedicApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.BiomedicApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">40%</item>
+    </style>
 </resources>
