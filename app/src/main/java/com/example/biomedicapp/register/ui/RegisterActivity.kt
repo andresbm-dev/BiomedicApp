@@ -1,18 +1,14 @@
-package com.example.biomedicapp.register
+package com.example.biomedicapp.register.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AlertDialog
 import cn.pedant.SweetAlert.SweetAlertDialog
-import com.example.biomedicapp.R
 import com.example.biomedicapp.databinding.ActivityRegisterBinding
 import com.example.biomedicapp.home.activity.MainActivity
-import com.example.biomedicapp.login.LoginActivity
+import com.example.biomedicapp.login.ui.LoginActivity
 import com.example.biomedicapp.utils.BioApplication.Companion.preferences
-import com.example.biomedicapp.utils.Utils
-import com.example.biomedicapp.utils.UtilsConstants
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding

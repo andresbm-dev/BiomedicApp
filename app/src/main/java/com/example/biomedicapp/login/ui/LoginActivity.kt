@@ -1,13 +1,12 @@
-package com.example.biomedicapp.login
+package com.example.biomedicapp.login.ui
 
 import android.content.Intent
-import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import cn.pedant.SweetAlert.SweetAlertDialog
 import com.example.biomedicapp.home.activity.MainActivity
 import com.example.biomedicapp.databinding.ActivityLoginBinding
-import com.example.biomedicapp.register.RegisterActivity
+import com.example.biomedicapp.register.ui.RegisterActivity
 import com.example.biomedicapp.utils.BioApplication.Companion.preferences
 
 class LoginActivity : AppCompatActivity() {

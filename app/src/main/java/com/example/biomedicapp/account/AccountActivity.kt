@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.biomedicapp.databinding.ActivityAccountBinding
 import com.example.biomedicapp.home.activity.MainActivity
-import com.example.biomedicapp.login.LoginActivity
+import com.example.biomedicapp.login.ui.LoginActivity
 import com.example.biomedicapp.utils.BioApplication.Companion.preferences
 
 class AccountActivity : AppCompatActivity() {
