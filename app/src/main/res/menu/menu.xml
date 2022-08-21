@@ -3,16 +3,16 @@
     <item android:id="@+id/Home"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_home_24"
-        android:title="Home" />
+        android:title="Inicio" />
     <item
         android:id="@+id/maintenance"
-        android:title="Maintenance"
+        android:title="Mantenimiento"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_engineering_24" />
     <item
         android:id="@+id/calibrate"
         android:icon="@drawable/ic_baseline_edit_24"
         android:enabled="true"
-        android:title="Calibration"/>
+        android:title="Calibración"/>
 
 </menu>

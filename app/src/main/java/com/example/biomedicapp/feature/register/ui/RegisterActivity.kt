@@ -12,6 +12,7 @@ import com.example.biomedicapp.databinding.ActivityRegisterBinding
 import com.example.biomedicapp.feature.login.ui.LoginActivity
 import com.example.biomedicapp.feature.register.viewmodel.RegisterViewModelImp
 import com.example.biomedicapp.utils.BioApplication.Companion.preferences
+import com.example.biomedicapp.utils.Result
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
 
@@ -31,11 +32,16 @@ class RegisterActivity : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        viewModel.signUpStateLiveData.observe(this,{
-            if (it){
-                //showAlert()
-                storeData()
-                goLogin()
+        viewModel.signUpStateLiveData.observe(this,{state->
+            when(state) {
+                is Result.Success -> {
+                    onBackPressed()
+                    //goLogin()
+                    storeData()
+                }
+                is Result.Error ->{
+                    showAlertError()
+                }
             }
         })
 
@@ -64,7 +70,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun goLogin() {
-        startActivity(Intent(this,LoginActivity::class.java))
+        startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
     }
 
     private fun showAlertError() {
@@ -86,5 +92,6 @@ class RegisterActivity : AppCompatActivity() {
         preferences.saveName(name!!)
         preferences.saveCity(city!!)
     }
+
 
 }

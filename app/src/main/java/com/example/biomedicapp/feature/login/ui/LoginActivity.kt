@@ -10,6 +10,7 @@ import com.example.biomedicapp.databinding.ActivityLoginBinding
 import com.example.biomedicapp.feature.register.ui.RegisterActivity
 import com.example.biomedicapp.feature.register.viewmodel.RegisterViewModelImp
 import com.example.biomedicapp.utils.BioApplication.Companion.preferences
+import com.example.biomedicapp.utils.Result
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.HiltAndroidApp
 
@@ -26,13 +27,17 @@ class LoginActivity : AppCompatActivity() {
 
         checkUserValues()
 
-        viewModel.loginStateLiveData.observe(this,{
-            if (it){
-                goHome()
-                storeData()
+        viewModel.loginStateLiveData.observe(this,{state->
+            when(state) {
+                is Result.Success -> {
+                    goHome()
+                    storeData()
+                }
+                is Result.Error ->{
+                    showAlertError("Correo o contraseña invalidos")
+                }
             }
-            else
-                showAlertError("Correo o contraseña invalidos")
+
         })
         binding.bottomStart.setOnClickListener {
             validateUser()
